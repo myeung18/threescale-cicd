@@ -12,34 +12,34 @@
   tasks:
   # Deploy in DEV
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
     vars:
       threescale_cicd_api_environment_name: dev
   # Deploy in TEST
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
     vars:
       threescale_cicd_api_environment_name: test
   # Deploy in PROD
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
     vars:
       threescale_cicd_api_environment_name: prod
   # Cleanup the DEV
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
       tasks_from: 'cleanup'
     vars:
       threescale_cicd_api_environment_name: dev
   # Cleanup the TEST
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
       tasks_from: 'cleanup'
     vars:
       threescale_cicd_api_environment_name: test
   # Cleanup the PROD
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
       tasks_from: 'cleanup'
     vars:
       threescale_cicd_api_environment_name: prod

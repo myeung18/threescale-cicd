@@ -9,8 +9,8 @@
   tasks:
   # Deploy the service
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
   # Delete the service
   - import_role:
-      name: 'nmasse-itix.threescale-cicd'
+      name: 'myeung18.threescale-cicd'
       tasks_from: 'cleanup'
