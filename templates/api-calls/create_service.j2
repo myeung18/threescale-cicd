@@ -1,5 +1,5 @@
 {% if threescale_cicd_apicast_sandbox_endpoint|default("")|length > 0 or threescale_cicd_apicast_production_endpoint|default("")|length > 0 %}
-{% set deployment_type = "self_managed" %}
+{% set deployment_type = "hosted" %}
 {% else %}
 {% set deployment_type = "hosted" %}
 {% endif %}
